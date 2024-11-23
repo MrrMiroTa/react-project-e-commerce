@@ -1,0 +1,109 @@
+/* Fashion Section */
+.fashion_section {
+  background: #cf4a4a;
+  padding: 40px 0;
+}
+
+.fashion_taital {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fashion_section_2 {
+  margin-top: 30px;
+}
+
+.box_main {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.shirt_text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price_text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.price_text span {
+  color: #827064;
+}
+
+.tshirt_img img {
+  width: 100%;
+  max-height: 200px; /* Limit image height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 10px;
+}
+
+.btn_main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.buy_bt a,
+.seemore_bt a {
+  width: 120px;
+  background: #3b3735;
+  color: #a98f8f;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.buy_bt a:hover,
+.seemore_bt a:hover {
+  background: #e64a19;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .fashion_taital {
+    font-size: 22px; /* Smaller title on mobile */
+  }
+
+  .box_main {
+    padding: 15px; /* Less padding for smaller screens */
+  }
+
+  .btn_main {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add space between stacked buttons */
+  }
+
+  .buy_bt a,
+  .seemore_bt a {
+    width: 100%; /* Buttons take full width on small screens */
+    text-align: center;
+  }
+
+  .tshirt_img img {
+    max-height: 180px; /* Adjust image height for smaller screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .box_main {
+    padding: 18px; /* Slightly adjusted padding for medium screens */
+  }
+
+  .btn_main {
+    justify-content: space-evenly; /* Evenly distribute buttons on medium screens */
+  }
+}
